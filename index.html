@@ -10,9 +10,14 @@
     <body>
         <h1>Check the weather in any city of the world</h1>
         <h2>You can find live data in this website</h2>
-        <input type = "text" id="cityInput" placeholder="Enter city name">
-        <button id = "searchBtn">Get Weather</button>
-        <div id="weatherResult"></div>
+        <div style="position: relative; width: 300px;">
+            <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off" style="width: 100%;">
+            <ul id="suggestions" class="suggestion-list"></ul>
+        </div>
+        <button id="searchBtn" style="margin-top: 10px; width: 25%;">Get Weather</button>
+        <div id="weatherResult">
+            <button id="pinToggleBtn"></button>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
